@@ -1,10 +1,6 @@
-import styles from "./index.module.scss"
+import styles from "./index.module.scss";
 const Header = () => {
-    return (
-        <div className={styles.header}>
-            Header
-        </div>
-    )
-}
+  return <div className={styles.header}>Hello</div>;
+};
 
 export default Header;
