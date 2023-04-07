@@ -25,67 +25,78 @@ const Section6 = () => {
                         <span className={styles.text_title}>Strategic Partners</span>
                     </div>
 
-                    <div className={styles.view_icon}>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon1} />
-                            <span className={styles.text_icon}>Spacecy Wallet</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon2} />
-                            <span className={styles.text_icon}>Martian</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon3} />
-                            <span className={styles.text_icon}>Blocto App</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon4} />
-                            <span className={styles.text_icon}>Pontem Network</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon5} />
-                            <span className={styles.text_icon}>Petra Wallet</span>
-                        </div>
-
-                    </div>
+                    <div className={styles.view_body_icon}>
+                        <div className={styles.view_icon_1}>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon1} />
+                                <span className={styles.text_icon}>Spacecy Wallet</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon2} />
+                                <span className={styles.text_icon}>Martian</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon3} />
+                                <span className={styles.text_icon}>Blocto App</span>
+                            </div>
 
 
-
-                    <div className={styles.view_icon}>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon6} />
-                            <span className={styles.text_icon}>Aptos Stats</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon7} />
-                            <span className={styles.text_icon}>Rise Wallet</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon8} />
-                            <span className={styles.text_icon}>Hippo Labs</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon9} />
-                            <span className={styles.text_icon}>Satay Labs</span>
-                        </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon10} />
-                            <span className={styles.text_icon}>Abel Finance</span>
-                        </div>
-                    </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon4} />
+                                <span className={styles.text_icon}>Pontem Network</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon5} />
+                                <span className={styles.text_icon}>Petra Wallet</span>
+                            </div>
 
 
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon11} />
+                                <span className={styles.text_icon}>Switchboard</span>
+                            </div>
 
+                        </div>
 
-                    <div className={styles.view_icon}>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon11} />
-                            <span className={styles.text_icon}>Switchboard</span>
+                        <div className={styles.view_icon_1}>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon6} />
+                                <span className={styles.text_icon}>Aptos Stats</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon7} />
+                                <span className={styles.text_icon}>Rise Wallet</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon8} />
+                                <span className={styles.text_icon}>Hippo Labs</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon9} />
+                                <span className={styles.text_icon}>Satay Labs</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon10} />
+                                <span className={styles.text_icon}>Abel Finance</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon12} />
+                                <span className={styles.text_icon}>Tsunami Finance</span>
+                            </div>
+
                         </div>
-                        <div className={styles.view_img}>
-                            <img className={styles.img_icon} src={icon12} />
-                            <span className={styles.text_icon}>Tsunami Finance</span>
-                        </div>
+
+                        {/* <div className={styles.view_icon_1}>
+
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon11} />
+                                <span className={styles.text_icon}>Switchboard</span>
+                            </div>
+                            <div className={styles.view_img}>
+                                <img className={styles.img_icon} src={icon12} />
+                                <span className={styles.text_icon}>Tsunami Finance</span>
+                            </div>
+                        </div> */}
 
                     </div>
                 </div>

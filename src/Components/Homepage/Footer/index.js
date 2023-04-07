@@ -32,11 +32,38 @@ const Footer = () => {
                         </div>
                     </div>
 
+                    <div className={styles.col1}>
+                        <div className={styles.footer_div2}>
+                            <span className={styles.title}>Protocol</span>
+                            <span className={styles.text}>Swap Earn Liquidity Staking Farms Bridge Analytics</span>
+                        </div>
 
-                    <div className={styles.footer_div2}>
-                        <span className={styles.title}>Protocol</span>
-                        <span className={styles.text}>Swap Earn Liquidity Staking Farms Bridge Analytics</span>
+                        <div className={styles.footer_div2}>
+                            <span className={styles.title}>Compass Share</span>
+                            <span className={styles.text}>Crypto Sports Economics Esport Polictics</span>
+                        </div>
                     </div>
+
+
+                    <div className={styles.col1}>
+                        <div className={styles.footer_div2}>
+                            <span className={styles.title}>Devlopers</span>
+                            <span className={styles.text}>Github Docs BugBounty Audits Blog</span>
+                        </div>
+
+                        <div className={styles.footer_div2}>
+                            <span className={styles.title}>DAO</span>
+                            <span className={styles.text}>Governance Voting Forum</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.col1}>
+                        <div className={styles.footer_div2}>
+                            <span className={styles.title}>About</span>
+                            <span className={styles.text}>Docs Team Brandkit Disclaimer Contact us</span>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>

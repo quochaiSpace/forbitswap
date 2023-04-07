@@ -55,29 +55,73 @@
                 }
             }
 
-            .footer_div2 {
+            .col1 {
+                display: flex;
+                gap: 20px;
+
+                .footer_div2 {
+                    display: flex;
+                    flex-direction: column;
+    
+                    .title {
+                        font-family: 'Montserrat';
+                        font-style: italic;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                    }
+    
+                    .text {
+                        font-family: 'Montserrat';
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-transform: capitalize;
+                        color: #D8D8D8;
+                        inline-size: min-content;
+                        margin: auto;
+                    }
+                }
+            }
+
+          
+        }
+    }
+}
+
+
+
+//Responsive
+@media screen and(max-width:850px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+
+        .content {
+            height: 100%;
+            width: 100%;
+
+            .body_footer {
                 display: flex;
                 flex-direction: column;
+                padding-left: 15px;
+                padding-top: 25px;
+                gap: 20px;
 
-                .title {
-                    font-family: 'Montserrat';
-                    font-style: italic;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #FFFFFF;
-                }
+                .footer_div1 {
+                    
+                    .title {
+                        font-size: 15px;
+                        color: rgb(216, 216, 216);
+                    }
 
-                .text {
-                    font-family: 'Montserrat';
-                    font-style: italic;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 100%;
-                    text-transform: capitalize;
-                    color: #D8D8D8;
-                    inline-size: min-content;
-                    margin: auto;
+                    .text {
+                        font-size: 13px;
+                        opacity: 0.5;
+                    }
                 }
             }
         }
