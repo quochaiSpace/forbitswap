@@ -1,11 +1,273 @@
-.header {
+.container {
+  width: 100%;
+  height: 150vh;
+  background: url("../../../assets/images/BG\ swap3.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .navbar {
+    background-color: none;
+    color: black;
+    font-size: 20px;
+    justify-content: center;
     display: flex;
-    text-align: center;
-    border: 1px solid red;
-    height: 100vh;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+    font-family: "Montserrat";
+    font-style: italic;
+    .logo {
+      display: block;
+    }
+
+    .logo_mobile {
+      display: none;
+    }
+
+    .navigator {
+      background: none;
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 50px;
+      float: left;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      gap: 30px;
+    }
+
+    .btnCw {
+      background: #007aff;
+      font-family: "Montserrat";
+      font-style: italic;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      width: 170px;
+      height: 36px;
+      font-size: 16px;
+      color: white;
+      font-weight: 500;
+      border: none;
+    }
+    .togglebtn {
+      margin-left: 20px;
+      width: 42px;
+      height: 16px;
+    }
+  }
+
+  .content {
+    height: 50%;
     width: 100%;
-    background: url("../../../assets/images/BG\ swap3.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    text-align: -webkit-center;
+
+    .view_content {
+      width: 50%;
+      height: 95%;
+      background: url("../../../assets/images/CPS\ 1.png");
+      background-size: contain;
+      padding-top: 20px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+
+      .view_text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 45 px;
+        margin-left: -150px;
+
+        // padding-left: 100px;
+
+        .textTitle {
+          color: white;
+          font-style: italic;
+          margin-top: 25px;
+          font-size: 45px;
+          font-weight: 600;
+          font-family: "Montserrat";
+        }
+
+        .textTitle2 {
+          color: white;
+          font-style: italic;
+          margin-top: 5px;
+          font-size: 35px;
+          font-family: "Montserrat";
+        }
+
+        .textTitle3 {
+          color: white;
+          font-style: italic;
+          margin-top: 10px;
+          font-size: 25px;
+          font-family: "Montserrat";
+        }
+        .tradebtn {
+          width: 250px;
+          height: 52.94px;
+          left: 483px;
+          top: 406px;
+
+          background: rgba(157, 195, 230, 0.6);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(5px);
+          /* Note: backdrop-filter has minimal browser support */
+
+          border-radius: 12px;
+          font-family: "Montserrat";
+          font-style: italic;
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 100.02%;
+          /* identical to box height, or 26px */
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.swiper_wrapper {
+  text-align: -webkit-center;
+  display: flex;
+  width: 90%;
+  margin: 80px;
+}
+
+.cardBody1 {
+  width: 350px;
+  height: 208px;
+  background: url("../../../assets/images/Group\ 145671.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cardBody2 {
+  width: 350px;
+  height: 208px;
+  background: url("../../../assets/images/Group\ 145672.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cardBody3 {
+  width: 350px;
+  height: 208px;
+  background: url("../../../assets/images/Group\ 145673.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.crypto_zone {
+  display: flex;
+  justify-content: center;
+
+  .crypto_currency {
+    width: 76%;
+    height: 30px;
+    margin-top: -50px;
+    margin-right: 20px;
+  }
+}
+
+//Responsive
+@media screen and(max-width:850px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    .navbar {
+      display: flex;
+      .logo {
+        display: none;
+      }
+
+      .logo_mobile {
+        display: block;
+        width: -webkit-fill-available;
+        .img_logo {
+          height: 50px;
+        }
+      }
+      .navigator {
+        display: none;
+      }
+      .btnCw {
+        width: 230px;
+        height: 30px;
+        font-size: 14px;
+      }
+      .togglebtn {
+        display: none;
+      }
+    }
+    .content {
+      height: 450px;
+      width: 100%;
+      // text-align: -webkit-center;
+
+      .view_content {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        background-position-y: 250px;
+        justify-content: center;
+
+        .view_text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0px;
+          align-items: center;
+          .textTitle {
+            font-size: 24px;
+            place-self: center;
+          }
+          .textTitle2 {
+            font-size: 18px;
+            text-align: -webkit-center;
+          }
+          .textTitle3 {
+            font-size: 14px;
+            text-align: -webkit-center;
+          }
+          .tradebtn {
+            width: 140px;
+            height: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .swiper_wrapper {
+      margin: 80px 22px;
+      .cardBody1 {
+        width: 350px;
+        height: 150px;
+        background-position: center;
+      }
+      .cardBody2 {
+        width: 350px;
+        height: 150px;
+        background-position: center;
+      }
+      .cardBody3 {
+        width: 350px;
+        height: 150px;
+        background-position: center;
+      }
+    }
+
+    .crypto_zone {
+      .crypto_currency {
+        height: 30px;
+        margin-top: -50px;
+        .crypto_img {
+          width: 110%;
+          height: 140%;
+        }
+      }
+    }
+  }
 }
