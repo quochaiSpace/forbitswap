@@ -4,12 +4,38 @@ import { Navigation } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 
+import { useState } from "react";
+
 import logo from "../../../assets/images/logo.png";
 import logoMobile from "../../../assets/images/logo-mobile.png";
 import toggle from "../../../assets/images/Group 145648.png";
 import crypto from "../../../assets/images/Crypto.png";
 
 const Header = () => {
+
+  const [walletAdress, setWalletAddress] = useState("")
+
+  const requestAcount = async () => {
+    console.log("first")
+
+    if (window.ethereum) {
+      console.log('deleted')
+
+      try {
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts"
+        })
+        setWalletAddress(accounts[0]);
+      } catch {
+        console.log("error conecting!")
+      }
+    } else {
+      window.alert("please install Metamask!");
+      window.open("https://metamask.io/");
+
+    }
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
@@ -28,9 +54,15 @@ const Header = () => {
             <li>Earn</li>
           </ul>
         </nav>
-        <button className={styles.btnCw} type="">
-          Connect Wallet
-        </button>
+        <div>
+          <button className={styles.btnCw} type=""
+            onClick={() => requestAcount()}
+          >
+            <span> {walletAdress.length > 0 ? `Connect: ${walletAdress.substring(0, 4)}...${walletAdress.substring(38)}` : "Connect Wallet"} </span>
+
+          </button>
+        </div>
+
         <div className={styles.togglebtn}>
           <img src={toggle} alt=""></img>
         </div>
